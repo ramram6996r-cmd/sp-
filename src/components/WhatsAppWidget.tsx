@@ -14,13 +14,13 @@ export const WhatsAppWidget: React.FC = () => {
   const getWhatsAppUrl = (type: "measurement" | "catalogue" | "general" | "hours") => {
     let message = "";
     if (type === "measurement") {
-      message = "Hi SP Creative! I would like to schedule a free site measurement of my house. I reside in Davangere. Please let me know how to proceed.";
+      message = "Hi DPS Interiors! I would like to schedule a free site measurement of my house. I reside in Davangere. Please let me know how to proceed.";
     } else if (type === "catalogue") {
-      message = "Hi SP Creative! I'm planning my interiors. Could you please send me your latest catalogue booklet, photos, and share some pricing details for my home?";
+      message = "Hi DPS Interiors! I'm planning my interiors. Could you please send me your latest catalogue booklet, photos, and share some pricing details for my home?";
     } else if (type === "hours") {
-      message = "Hello, are you open right now? I would like to visit your gallery shop in SS Layout, Davangere today.";
+      message = "Hello, are you open right now? I would like to visit your gallery/factory in Lokikere Road, Davangere today.";
     } else {
-      message = "Hi SP Creative Alluminium Interiors! I am browsing your official website and had a general query regarding aluminium kitchen / wardrobe designs.";
+      message = "Hi DPS Interiors! I am browsing your official website and had a general query regarding kitchen/wardrobe/decorating designs.";
     }
     return `https://wa.me/${CONTACT_INFO.whatsappNumber.replace("+", "")}?text=${encodeURIComponent(message)}`;
   };
@@ -44,10 +44,10 @@ export const WhatsAppWidget: React.FC = () => {
                   <MessageCircle className="h-5 w-5 text-white fill-white" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold tracking-tight">SP Design Support</h4>
+                  <h4 className="text-sm font-bold tracking-tight">DPS Design Support</h4>
                   <span className="text-[10px] text-emerald-400 font-bold flex items-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                    Online • Closes 10 PM
+                    Online • Closes 8 PM
                   </span>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export const WhatsAppWidget: React.FC = () => {
             <div className="bg-stone-50 p-4 border-b border-stone-100 flex gap-2">
               <span className="text-lg">👋</span>
               <p className="text-xs text-slate-600 leading-normal font-medium">
-                Hello and welcome to SP Creative Interiors! Let us help you plan your dream home. Choose a pathway to chat directly:
+                Hello and welcome to DPS Interiors! Let us help you plan your dream home. Choose a pathway to chat directly:
               </p>
             </div>
 
@@ -111,7 +111,7 @@ export const WhatsAppWidget: React.FC = () => {
 
             {/* Footer */}
             <div className="p-3 bg-stone-50 border-t border-stone-100 text-center flex justify-center items-center gap-1.5 text-[9px] text-slate-400 font-bold uppercase tracking-wider">
-              <Shield className="h-3 w-3 text-[#A37D56]" /> Official SP Creative Account
+              <Shield className="h-3 w-3 text-[#A37D56]" /> Official DPS Interiors Account
             </div>
           </motion.div>
         )}

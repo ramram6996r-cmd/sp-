@@ -70,7 +70,7 @@ export default function App() {
 
   // Quick consult for portfolio items
   const handlePortfolioConsult = (title: string) => {
-    const text = `Hi SP Creative Interiors! I saw your stunning design online: *${title}*. I am in Davangere and would love to get a customization quote for my home. Please contact me back. Thank you!`;
+    const text = `Hi DPS Interiors! I saw your stunning design online: *${title}*. I am in Davangere and would love to get a customization quote for my home. Please contact me back. Thank you!`;
     const url = `https://wa.me/${CONTACT_INFO.whatsappNumber.replace("+", "")}?text=${encodeURIComponent(text)}`;
     window.location.href = url;
   };
@@ -267,7 +267,7 @@ export default function App() {
           <div id="hero-background-container" className="absolute inset-0 z-0">
             <img
               src={heroBannerImg}
-              alt="SP Creative Aluminium Interiors Showcase Banner"
+              alt="DPS Interiors Showcase Banner"
               className="w-full h-full object-cover opacity-35 filter scale-105 animate-[pulse_12s_ease-internal_infinite]"
               referrerPolicy="no-referrer"
             />
@@ -375,14 +375,13 @@ export default function App() {
         <section id="section-about" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              
-              {/* Image Grid with Offset overlays */}
+                    {/* Image Grid with Offset overlays */}
               <div id="about-visuals" className="lg:col-span-5 relative">
                 <div id="about-image-shadow" className="absolute -inset-4 bg-[#A37D56]/5 rounded-3xl -rotate-1 transform pointer-events-none"></div>
                 <div id="about-image-frame" className="relative rounded-2xl border border-stone-200 overflow-hidden shadow-xl aspect-4/3">
                   <img
                     src={kitchenImg}
-                    alt="SP Creative Aluminium modular production"
+                    alt="DPS Interiors custom modular production"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />
@@ -392,8 +391,8 @@ export default function App() {
                       <Award className="h-7 w-7" />
                     </div>
                     <div>
-                      <p className="text-sm font-bold">4.9 Star Verified Shop</p>
-                      <p className="text-xs text-stone-400 mt-0.5 font-medium">Over 36 active high-quality reviews on Google</p>
+                      <p className="text-sm font-bold">4.9 Star Verified Factory</p>
+                      <p className="text-xs text-stone-400 mt-0.5 font-medium">Over 36 active high-quality reviews on Google & Social Media</p>
                     </div>
                   </div>
                 </div>
@@ -404,20 +403,19 @@ export default function App() {
                 <div id="about-head-labels">
                   <span className="text-[10px] tracking-widest uppercase font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded inline border border-amber-200/50">Our Brand Legacy</span>
                   <h2 id="about-heading" className="text-3xl md:text-4xl font-display font-bold text-slate-900 tracking-tight mt-3">
-                    Who Is SP Creative Aluminium Interiors?
+                    Who Is DPS Interiors?
                   </h2>
                 </div>
 
                 <p id="about-editorial-desc-1" className="text-sm text-slate-600 leading-relaxed font-medium">
-                  Located oppositely to <strong>Rishi Public School, 2nd Main 2nd Cross Road, SS Layout, Davangere</strong>, 
-                  we are the trusted design-fabricator for modern homeowners, builders, and corporate workspaces in Karnataka. 
-                  Our motto is <em>“Your Dream Home Starts Here”</em> — and we deliver it with heavy durability, fast scheduling, and fully customized layouts.
+                  Located in the premier manufacturing hub at <strong>L-8 KSSIDC Industrial Area, Lokikere Road, Davangere, Karnataka - 577005</strong>, 
+                  we are led by <strong>Sunil DP</strong> (Modular Interior Designer). DPS Interiors operates a state-of-the-art modular factory that 
+                  translates your dream spaces into durable realities with factory-direct pricing.
                 </p>
 
                 <p id="about-editorial-desc-2" className="text-sm text-slate-600 leading-relaxed font-medium">
-                  Traditional wooden interiors decay under Davangere's humid summer nights and rainy months. 
-                  We fabricate interiors with rigid **High-Grade extruded aluminum tracks** and **high-density ACP (Aluminium Composite Panels)**. 
-                  This creates an ultra-hygienic cabinet system that is rustproof, flame retardant, termite-resistant, and 100% moisture impervious.
+                  We specialize in all types of high-end home and commercial interior decoration projects. From custom modular kitchens, wardrobes, luxury TV cabinets, 
+                  and false ceilings to customized bedside units, pooja partitions, and spectacular designer textures with flawless interior or exterior painting—we have you covered.
                 </p>
 
                 {/* Grid stats */}
@@ -444,12 +442,12 @@ export default function App() {
                 <div id="about-directions-link" className="pt-2 flex flex-wrap gap-4 items-center">
                   <a
                     id="directions-google-maps"
-                    href="https://maps.google.com/?q=SP+creative+Alluminium+Interiors+SS+Layout+Davangere"
+                    href="https://maps.google.com/?q=DPS+Interiors+KSSIDC+Industrial+Area+Lokikere+Road+Davangere"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#A37D56] hover:text-[#8F653E] transition-all"
                   >
-                    <span>Opposite Rishi Public School, SS Layout, Davangere</span>
+                    <span>L-8, KSSIDC Industrial Area, Lokikere Road, Davangere</span>
                     <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 </div>
@@ -472,7 +470,7 @@ export default function App() {
                 Pillars of Excellence
               </span>
               <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-white leading-tight">
-                What Makes Us Special & Why Choose SP Creative?
+                What Makes Us Special & Why Choose DPS Interiors?
               </h2>
               <div className="w-20 h-1 bg-[#A37D56] mx-auto rounded-full mt-2"></div>
               <p className="text-sm md:text-base text-stone-350 leading-relaxed font-normal pt-2">
@@ -529,7 +527,7 @@ export default function App() {
                     Rapid 5-Day Installation, No Dust At Home
                   </h3>
                   <p className="text-xs text-stone-300 leading-relaxed">
-                    Plywood carpenters take weeks of loud, messy cutting, filling your home with toxic sanding dust and causing continuous scheduling delays. SP Creative executes 90% of structural fabrication and framing in our clean workshop. We deliver prefabricated items directly to your residence, performing a quiet, dust-free final mock-up assembly in just 5-7 days.
+                    Plywood carpenters take weeks of loud, messy cutting, filling your home with toxic sanding dust and causing continuous scheduling delays. DPS Interiors executes 90% of structural fabrication and framing in our clean workshop. We deliver prefabricated items directly to your residence, performing a quiet, dust-free final mock-up assembly in just 5-7 days.
                   </p>
                 </div>
                 <div className="text-[10px] uppercase tracking-wider font-bold text-[#A37D56]/80 pt-2 border-t border-white/5">
@@ -583,7 +581,7 @@ export default function App() {
                     Davangere-Native Support Presence
                   </h3>
                   <p className="text-xs text-stone-300 leading-relaxed">
-                    We are not a distant online aggregator. We are SP Creative, based in SS Layout, Davangere. Our fully equipped experience gallery is loaded with real finish samples (glossy and matte ACP, fluted wood profiles, high-strength hardware). Our clients get continuous design advice, accurate measurements, and on-site physical support within 24 hours of any call.
+                    We are not a distant online aggregator. We are DPS Interiors, based in Lokikere Road, Davangere. Our fully equipped experience factory/gallery is loaded with real finish samples (glossy and matte ACP, fluted wood profiles, high-strength hardware, custom textures). Our clients get continuous design advice, accurate measurements, and on-site physical support within 24 hours of any call.
                   </p>
                 </div>
                 <div className="text-[10px] uppercase tracking-wider font-bold text-amber-500/80 pt-2 border-t border-white/5">
@@ -688,7 +686,7 @@ export default function App() {
             <div id="planner-headings" className="space-y-3 max-w-2xl mx-auto">
               <span className="text-[10px] tracking-widest uppercase font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded inline-block border border-amber-200/50">Developer Masterwork</span>
               <h2 id="planner-title" className="text-3xl md:text-4xl font-display font-bold text-slate-900 tracking-tight">
-                SP Interactive Design Studio
+                DPS Interactive Design Studio
               </h2>
               <p id="planner-subtitle" className="text-xs sm:text-sm text-slate-500 font-medium">
                 Design custom specifications instantly. Swap tabs to configure your dimensions and layout style, then query pricing over WhatsApp.
@@ -1173,9 +1171,9 @@ export default function App() {
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block">GOOGLE MAP DIRECTIONS</span>
-                      <h4 className="text-lg font-bold text-slate-900 mt-1">How to reach SP Creative Interiors</h4>
+                      <h4 className="text-lg font-bold text-slate-900 mt-1">How to reach DPS Interiors</h4>
                     </div>
-                    <span className="text-[10px] text-slate-500 bg-stone-100 border border-stone-200 px-2 py-0.5 rounded font-mono font-medium">Davangere Core</span>
+                    <span className="text-[10px] text-slate-500 bg-stone-100 border border-stone-200 px-2 py-0.5 rounded font-mono font-medium">Davangere Factory</span>
                   </div>
                   
                   {/* Clean schematic layout guiding driving route */}
@@ -1183,19 +1181,19 @@ export default function App() {
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 rounded-full bg-slate-900 text-white font-bold text-xs flex justify-center items-center shrink-0 mt-0.5">1</div>
                       <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                        Head to <strong>SS Layout, Davangere</strong>. Use the Rishi Public School landmark.
+                        Head to <strong>Lokikere Road, Davangere</strong>. Use the **KSSIDC Industrial Area** estate entry.
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 rounded-full bg-slate-900 text-white font-bold text-xs flex justify-center items-center shrink-0 mt-0.5">2</div>
                       <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                        Look opposite **Rishi Public School**, right on the corner of <strong>2nd Main 2nd Cross Road</strong>.
+                        Look for <strong>Ground floor structural unit S N L - 08 / L-8 block</strong>.
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 rounded-full bg-slate-900 text-white font-bold text-xs flex justify-center items-center shrink-0 mt-0.5">3</div>
                       <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                        You will spot our large premium sign board. Parallel car parking spaces are freely available immediately outside.
+                        You will spot our premium showroom and manufacturing factory rows. Spaciously open customer parking is freely available outside.
                       </p>
                     </div>
                   </div>
@@ -1280,7 +1278,7 @@ export default function App() {
 
             {/* Right: Contact Guidelines */}
             <div id="footer-contact-col" className="md:col-span-4 space-y-4 text-left">
-              <span className="text-[10px] tracking-widest uppercase font-bold text-stone-400 block pb-1">Showroom Helpline</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-stone-400 block pb-1">Factory Hotline</span>
               <div className="space-y-3 text-xs text-stone-300 font-medium">
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4.5 w-4.5 text-[#A37D56] shrink-0 mt-0.5" />
@@ -1292,7 +1290,7 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-emerald-500" />
-                  <span className="text-stone-300">Mon - Sun: 9:00 AM - 10:00 PM</span>
+                  <span className="text-stone-300">Mon - Sun: 9:00 AM - 8:00 PM</span>
                 </div>
               </div>
             </div>
@@ -1302,8 +1300,8 @@ export default function App() {
           {/* Bottom copyright segment */}
           <div id="footer-bottom-row" className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400 font-medium">
             <div className="text-center sm:text-left space-y-1">
-              <p>© {new Date().getFullYear()} SP Creative Aluminium Interiors. All rights reserved.</p>
-              <p className="text-[10px] text-stone-500">Opposite Rishi Public School, SS Layout, Davangere, Karnataka 577006</p>
+              <p>© {new Date().getFullYear()} DPS Interiors. All rights reserved.</p>
+              <p className="text-[10px] text-stone-500">{CONTACT_INFO.address}</p>
             </div>
 
             {/* Social profiles links */}
@@ -1312,7 +1310,7 @@ export default function App() {
                 href={CONTACT_INFO.socials.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                title="SP Creative Youtube transformation"
+                title="DPS Interiors Youtube transformation"
                 className="hover:text-white p-2 rounded-lg bg-white/5 hover:bg-white/10 transition"
               >
                 <Youtube className="h-4 w-4" />
@@ -1321,7 +1319,7 @@ export default function App() {
                 href={CONTACT_INFO.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                title="SP Creative Instagram updates"
+                title="DPS Interiors Instagram updates"
                 className="hover:text-white p-2 rounded-lg bg-white/5 hover:bg-white/10 transition"
               >
                 <Instagram className="h-4 w-4" />
@@ -1330,7 +1328,7 @@ export default function App() {
                 href={CONTACT_INFO.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                title="SP Creative Facebook community"
+                title="DPS Interiors Facebook community"
                 className="hover:text-white p-2 rounded-lg bg-white/5 hover:bg-white/10 transition"
               >
                 <Facebook className="h-4 w-4" />

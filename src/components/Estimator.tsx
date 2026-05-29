@@ -129,7 +129,7 @@ export const Estimator: React.FC = () => {
       .map((opt) => `  * + ${opt.name}`)
       .join("\n");
 
-    const message = `*SP Creative Aluminium Interiors* 📊
+    const message = `*DPS Interiors* 📊
 *New Website Design & Price Details Query*
 ---------------------------------------
 👷 *Project Category:* ${serviceName}
@@ -142,7 +142,7 @@ ${extraLabels || "  * (None - Standard Specs)"}
 💬 *Pricing Request:* Please share the customized pricing details for this layout.
 ⏱️ *Expected Installation Speed:* ${installationTimeline} Days
 
-_Hi SP Creative team, I checked your website design planner and configured this specific layout. I reside in Davangere and would love to get a transparent price quote and details over WhatsApp._`;
+_Hi DPS Interiors team, I checked your website design planner and configured this specific layout. I reside in Davangere and would love to get a transparent price quote and details over WhatsApp._`;
 
     const encodedText = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsappNumber.replace("+", "")}?text=${encodedText}`;
@@ -328,7 +328,7 @@ _Hi SP Creative team, I checked your website design planner and configured this 
                 <span className="text-xs text-stone-400 font-medium block">Instant customized rate details</span>
               </div>
               <p className="text-[11px] text-stone-300 leading-normal">
-                Click below to send your configured blueprint to SP Creative on WhatsApp. We will reply instantly with detailed itemized pricing covering premium high-grade aluminium profiles, ACP sheets, custom fittings and installation in Davangere.
+                Click below to send your configured blueprint to DPS Interiors on WhatsApp. We will reply instantly with detailed itemized pricing covering premium high-grade modular profiles, custom fittings and professional installation in Davangere and nearby areas.
               </p>
             </div>
 

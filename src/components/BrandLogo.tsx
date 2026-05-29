@@ -60,69 +60,60 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         {/* Glow / Bulb */}
         <circle cx="410" cy="254" r="10" fill="#A37D56" />
 
-        {/* Elegant "S" in Charcoal */}
+        {/* Elegant "D", "P", "S" in Charcoal */}
         <text
-          x="100"
-          y="340"
+          x="110"
+          y="310"
           fontFamily="Georgia, serif"
-          fontSize="240"
-          fontWeight="bold"
+          fontSize="170"
+          fontWeight="black"
           fill="#334155"
-          className="font-serif font-bold text-slate-700"
+        >
+          D
+        </text>
+        <text
+          x="230"
+          y="310"
+          fontFamily="Georgia, serif"
+          fontSize="170"
+          fontWeight="black"
+          fill="#A37D56"
+        >
+          P
+        </text>
+        <text
+          x="330"
+          y="310"
+          fontFamily="Georgia, serif"
+          fontSize="170"
+          fontWeight="black"
+          fill="#242424"
         >
           S
         </text>
 
-        {/* Aluminum Window-pane Styled "P" */}
-        {/* Main stem */}
-        <rect x="285" y="110" width="18" height="230" fill="#242424" />
-        {/* Outer loop profile */}
-        <path
-          d="M295 110 H380 V265 H295"
-          stroke="#242424"
-          strokeWidth="18"
-          strokeLinecap="square"
-          strokeLinejoin="miter"
-        />
-        {/* Window inner partition lines */}
-        <line
-          x1="340"
-          y1="110"
-          x2="340"
-          y2="265"
-          stroke="#242424"
-          strokeWidth="10"
-        />
-        <line
-          x1="295"
-          y1="250"
-          x2="380"
-          y2="250"
-          stroke="#242424"
-          strokeWidth="10"
-        />
       </svg>
-
+ 
       {showText && (
         <div className="flex flex-col tracking-wider font-sans leading-none whitespace-nowrap min-w-0">
           <span
-            className={`text-xl font-bold tracking-widest ${
-              lightText ? "text-white" : "text-slate-900"
+            className={`text-xl font-extrabold tracking-widest ${
+              lightText ? "text-white" : "text-stone-900"
             }`}
           >
-            SP CREATIVE
+            DPS INTERIORS
           </span>
           <span
-            className="text-sm font-semibold tracking-[0.27em] text-[#A37D56]"
+            className="text-[10px] font-bold tracking-[0.2em] text-[#A37D56] mt-0.5"
           >
-            ALUMINIUM
+            DESIGN STUDIO & FACTORY
           </span>
           <span
-            className={`text-xs font-medium tracking-[0.41em] ${
-              lightText ? "text-slate-300" : "text-slate-600"
+            className={`text-[9px] font-medium tracking-[0.3em] mt-0.5 ${
+              lightText ? "text-stone-300" : "text-stone-500"
             }`}
           >
-            INTERIORS
+            MODULAR MASTERPIECES
           </span>
         </div>
       )}

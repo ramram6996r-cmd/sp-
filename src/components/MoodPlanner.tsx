@@ -23,7 +23,7 @@ export const MoodPlanner: React.FC = () => {
   const currentHandleObj = HANDLE_STYLES.find((h) => h.id === selectedHandle) || HANDLE_STYLES[0];
 
   const handleConsult = () => {
-    const message = `*SP Creative Aluminium Interiors* 🎨
+    const message = `*DPS Interiors* 🎨
 *Moodboard Customisation Request*
 ---------------------------------------
 ✨ *Selected Color Theme:* ${currentMoodObj.name} (${currentMoodObj.colorName})
@@ -31,7 +31,7 @@ export const MoodPlanner: React.FC = () => {
 🔍 *Inspiration Details:* ${currentMoodObj.description}
 
 ---------------------------------------
-_Hi SP Creative team, I picked this color configuration on your web palette planner. I would love to see real samples or catalogue booklets of this finish during our design consultation. Please let me know when you are free!_`;
+_Hi DPS Interiors team, I picked this color configuration on your web palette planner. I would love to see real samples or catalogue booklets of this finish during our design consultation. Please let me know when you are free!_`;
 
     const encodedText = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsappNumber.replace("+", "")}?text=${encodedText}`;
@@ -171,7 +171,7 @@ _Hi SP Creative team, I picked this color configuration on your web palette plan
                 </div>
 
                 <div className="text-white/80 text-[10px] tracking-wide font-mono">
-                  SP CABINETRY
+                  DPS CABINETRY
                 </div>
               </div>
             </div>
