@@ -16,7 +16,7 @@ export const WhatsAppWidget: React.FC = () => {
     if (type === "measurement") {
       message = "Hi SP Creative! I would like to schedule a free site measurement of my house. I reside in Davangere. Please let me know how to proceed.";
     } else if (type === "catalogue") {
-      message = "Hi SP Creative! I'm planning my interiors. Could you please send me your latest catalogue booklet, photos, and price list?";
+      message = "Hi SP Creative! I'm planning my interiors. Could you please send me your latest catalogue booklet, photos, and share some pricing details for my home?";
     } else if (type === "hours") {
       message = "Hello, are you open right now? I would like to visit your gallery shop in SS Layout, Davangere today.";
     } else {

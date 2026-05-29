@@ -104,7 +104,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       </svg>
 
       {showText && (
-        <div className="flex flex-col tracking-wider font-sans leading-none">
+        <div className="flex flex-col tracking-wider font-sans leading-none whitespace-nowrap min-w-0">
           <span
             className={`text-xl font-bold tracking-widest ${
               lightText ? "text-white" : "text-slate-900"

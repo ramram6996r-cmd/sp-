@@ -5,12 +5,18 @@
 
 import { PortfolioItem, Testimonial, ServiceDetail, FAQItem, DesignMood, MaterialOption } from "./types";
 
+import kitchenImg from "./assets/images/kitchen_portfolio_1780027659917.png";
+import wardrobeImg from "./assets/images/wardrobe_portfolio_1780027677114.png";
+import tvUnitImg from "./assets/images/tv_unit_portfolio_1780027696086.png";
+import ceilingImg from "./assets/images/ceiling_portfolio_1780027714175.png";
+import heroBannerImg from "./assets/images/hero_banner_1780027736290.png";
+
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "p1",
     title: "Eco-Luxe ACP Modular Kitchen",
     category: "kitchen",
-    image: "/src/assets/images/kitchen_portfolio_1780027659917.png",
+    image: kitchenImg,
     description: "Waterproof and fire-resistant aluminium composite panel kitchen in premium bronze-copper and matte charcoal finishes. Perfect for Indian cooking conditions with seamless cleaning surfaces.",
     highlights: ["100% Termite & Water Proof", "Soft-close Tandem Drawers", "Integrated Profile Handles", "Premium Quartz Inlay"]
   },
@@ -18,7 +24,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: "p2",
     title: "Anodized Charcoal Glass Wardrobe",
     category: "wardrobe",
-    image: "/src/assets/images/wardrobe_portfolio_1780027677114.png",
+    image: wardrobeImg,
     description: "Sleek built-in bedroom wardrobe design utilizing lightweight aluminium frames loaded with tinted bronze glass sliding doors. Includes customizable interior shelving and LED sensor lighting.",
     highlights: ["Space-saving Sliding Track", "Anodized Rustproof Frame", "Built-in LED Sensor Rails", "Custom Modular Trays"]
   },
@@ -26,7 +32,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: "p3",
     title: "Floating Minimalist TV Console",
     category: "tv_unit",
-    image: "/src/assets/images/tv_unit_portfolio_1780027696086.png",
+    image: tvUnitImg,
     description: "Refined living room media panel structured on black aluminium profile support framework with premium wood-texture accents, highlighted by warm indirect COB backlighting.",
     highlights: ["Concealed Cable Channels", "High Load-bearing Frame", "Acoustic Slatted Backdrop", "Soft Push-to-Open Cabinets"]
   },
@@ -34,7 +40,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: "p4",
     title: "Dynamic Ambient PVC False Ceiling",
     category: "ceiling",
-    image: "/src/assets/images/ceiling_portfolio_1780027714175.png",
+    image: ceilingImg,
     description: "Modern modular PVC ceiling design combining rich woodgrain finishes with stark white details. Engineered with integrated warm cove lighting and anti-sag durable brackets.",
     highlights: ["Moisture & Mildew Resistant", "Built-in COB Spotlighting", "Zero-Maintenance Paneled Surface", "Quick 2-Day Installation"]
   }
@@ -86,7 +92,7 @@ export const SERVICES: ServiceDetail[] = [
       "Ultra-modern premium matte and gloss color palettes",
       "Lifetime material structure guarantee"
     ],
-    image: "/src/assets/images/hero_banner_1780027736290.png",
+    image: heroBannerImg,
     iconName: "Home"
   },
   {
@@ -99,7 +105,7 @@ export const SERVICES: ServiceDetail[] = [
       "Smooth pull-out drawers and corner carousel mechanisms",
       "Ventilated sink cabinets to prevent foul odors"
     ],
-    image: "/src/assets/images/kitchen_portfolio_1780027659917.png",
+    image: kitchenImg,
     iconName: "ChefHat"
   },
   {
@@ -112,7 +118,7 @@ export const SERVICES: ServiceDetail[] = [
       "Premium glass / colored ACP finishing panels",
       "Anti-bacterial, dust-proof interior structural lining"
     ],
-    image: "/src/assets/images/wardrobe_portfolio_1780027677114.png",
+    image: wardrobeImg,
     iconName: "Layout"
   },
   {
@@ -125,7 +131,7 @@ export const SERVICES: ServiceDetail[] = [
       "Concealed wiring for ambient LED and COB drop lights",
       "Damp-proof and completely leak-resistant ceiling panels"
     ],
-    image: "/src/assets/images/ceiling_portfolio_1780027714175.png",
+    image: ceilingImg,
     iconName: "Layers"
   }
 ];

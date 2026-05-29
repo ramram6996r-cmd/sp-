@@ -130,7 +130,7 @@ export const Estimator: React.FC = () => {
       .join("\n");
 
     const message = `*SP Creative Aluminium Interiors* 📊
-*New Website Estimate Request*
+*New Website Design & Price Details Query*
 ---------------------------------------
 👷 *Project Category:* ${serviceName}
 📐 *Size / Dimensions:* ${width}ft (Width) x ${height}ft (Height) = *${width * height} sq.ft*
@@ -139,10 +139,10 @@ export const Estimator: React.FC = () => {
 ${extraLabels || "  * (None - Standard Specs)"}
 
 ---------------------------------------
-💰 *Estimated Budget:* ~₹${calculatedPrice.toLocaleString("en-IN")}
+💬 *Pricing Request:* Please share the customized pricing details for this layout.
 ⏱️ *Expected Installation Speed:* ${installationTimeline} Days
 
-_Hi SP Creative team, I used your website interactive planner. I reside in Davangere and would like to schedule a free site visit to take final measurements and verify the pricing. Please contact me!_`;
+_Hi SP Creative team, I checked your website design planner and configured this specific layout. I reside in Davangere and would love to get a transparent price quote and details over WhatsApp._`;
 
     const encodedText = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsappNumber.replace("+", "")}?text=${encodedText}`;
@@ -158,8 +158,8 @@ _Hi SP Creative team, I used your website interactive planner. I reside in Davan
             <Calculator className="h-5 w-5" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-slate-900 tracking-tight">Project Budget & Concept Planner</h3>
-            <p className="text-xs text-slate-500 font-medium">Fine-tune your layout for an instant budget calculation.</p>
+            <h3 className="text-xl font-bold text-slate-900 tracking-tight">Project Spec & Design Planner</h3>
+            <p className="text-xs text-slate-500 font-medium">Fine-tune your layout custom specifications and dimensions.</p>
           </div>
         </div>
 
@@ -291,7 +291,7 @@ _Hi SP Creative team, I used your website interactive planner. I reside in Davan
                 >
                   <div className="max-w-[75%]">
                     <p className="text-xs font-bold leading-tight">{opt.name}</p>
-                    <p className="text-[10px] text-slate-500 font-mono mt-0.5">+₹{opt.price.toLocaleString("en-IN")}</p>
+                    <p className="text-[10px] text-[#A37D56] font-medium mt-0.5">Premium Feature</p>
                   </div>
                   <div className={`w-4 h-4 rounded border flex items-center justify-center shrink-0 ${
                     selected ? "bg-amber-700 border-amber-700 text-white" : "border-slate-300"
@@ -320,16 +320,15 @@ _Hi SP Creative team, I used your website interactive planner. I reside in Davan
 
           <div className="space-y-4">
             <div className="bg-white/5 p-4 rounded-xl border border-white/10 space-y-3">
-              <span className="text-[10px] tracking-widest uppercase text-stone-400 font-bold block">Estimated Price Range</span>
-              <div className="flex items-baseline gap-1">
-                <span className="text-3xl md:text-4xl font-extrabold text-[#A37D56] font-sans font-mono">
-                  ₹{calculatedPrice.toLocaleString("en-IN")}
+              <span className="text-[10px] tracking-widest uppercase text-stone-400 font-bold block">Pricing Details</span>
+              <div className="space-y-1">
+                <span className="text-xl md:text-2xl font-extrabold text-white leading-tight block">
+                  Get Free Price Quote on WhatsApp
                 </span>
-                <span className="text-xs text-stone-400 font-normal">approx.*</span>
+                <span className="text-xs text-stone-400 font-medium block">Instant customized rate details</span>
               </div>
               <p className="text-[11px] text-stone-300 leading-normal">
-                Pricing is comprehensive including: High-grade Aluminium Profile framework, 
-                heavy brackets, premium hinges, door fabrication, alignment and full on-site fitting in Davangere.
+                Click below to send your configured blueprint to SP Creative on WhatsApp. We will reply instantly with detailed itemized pricing covering premium high-grade aluminium profiles, ACP sheets, custom fittings and installation in Davangere.
               </p>
             </div>
 
@@ -371,7 +370,7 @@ _Hi SP Creative team, I used your website interactive planner. I reside in Davan
             className="w-full bg-[#A37D56] hover:bg-[#8F653E] text-white py-4 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-lg hover:shadow-amber-900/40 flex items-center justify-center gap-2.5 group cursor-pointer text-sm"
           >
             <MessageSquare className="h-5 w-5 fill-white text-[#A37D56] group-hover:scale-110 transition-transform" />
-            <span>Consult Design on WhatsApp</span>
+            <span>Get Pricing Details on WhatsApp</span>
             <ArrowRight className="h-4 w-4 stroke-[2.5px] ml-1 group-hover:translate-x-1.5 transition-transform" />
           </button>
           
